@@ -14,7 +14,11 @@ function buscarAmigo(amigos, nombre) {
   //  buscarAmigo(amigos, 'toni') debe devolver { nombre: 'toni', edad: 33 };
 
   // Tu código aca:
-  
+  var k = amigos.map(function(x) {
+    if(x[nombre]===nombre){return x[nombre]}
+  })
+  return k;
+    
 }
 
 // No modifiques nada debajo de esta linea //
